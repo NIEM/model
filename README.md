@@ -1,16 +1,24 @@
-# NIEM release model
+# The NIEM release model viewer website
 
-This repo contains a rendering of the content of the NIEM 4.0RC2 release.
+This Git repository contains a browsable rendering of the content of NIEM releases.
 
-The content can currently be viewed on <https://niem.github.io/model>
+View NIEM releases at <https://niem.github.io/model>.
 
-The structure of the content.
+The structure of the content:
 
-* `/` : An index listing all the namespaces ([example](https://niem.github.io/model))
-* `/${namespace}` : An index listing all components in a namespace ([example](https://niem.github.io/model/nc))
-* `/${namespace}/${component}`: A description of a component ([example](https://niem.github.io/model/nc/PersonType)). Each component description contains: 
-  * The name of the component
-  * The human-readable definition/description of the component
-  * A diagram of the component and its relationships to other components ([example](https://niem.github.io/model/nc/PersonType#diagram))
-  * The XML Schema definition of the component ([example](https://niem.github.io/model/nc/PersonType#xml-schema))
-  * A JSON Schema definition for the component. The JSON Schema is under development, and should not be considered normative. ([example](https://niem.github.io/model/nc/PersonType#json-schema))
+- <https://niem.github.io/model/>: A listing of NIEM release versions available .
+- <https://niem.github.io/model/4.2>: A listing of the namespaces in the 4.2 release.
+- <https://niem.github.io/model/4.2/nc>: A listing of all the components in the NIEM Core namespace.
+- <https://niem.github.io/model/4.2/nc/PersonType>: A landing page for the `nc:PersonType` schema component from NIEM. This includes:
+    - Name of the component
+    - Its namespace prefix and namespace URI
+    - Its definition
+    - A diagram showing the relationships this component has to other components in NIEM. Click on names in the diagram to see details about other components.
+    - An XML Schema fragment for the component.
+    
+For recent versions of NIEM, you can see full details of any component by browsing to:
+
+`https://niem.github.io/model/${niem version}/${namespace prefix}/${component local name}`
+
+This website was built with the [XML Schema documentation generator at https://github.com/webb/xml-schema-documentation-generator](https://github.com/webb/xml-schema-documentation-generator).
+
