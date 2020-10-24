@@ -5,7 +5,7 @@ The latest version of NIEM:
 
 Version under development:
 
-- [NIEM 5.0rc4](5.0rc4)
+- [NIEM 5.0rc5](5.0rc5)
 
 Other versions of NIEM available here:
 
